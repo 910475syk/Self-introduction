@@ -11,11 +11,6 @@
 body{
     background-color: #ffffff;
 }
-.wrapper{
-    width: 95%;
-    max-width: 1140px;
-    margin: auto;
-}
 /* header */
 .header{
     padding: 50px 0;
@@ -81,9 +76,6 @@ body{
 .about .container{
     margin: 56px 0;
 }
-.about .text{
-    flex: 1;
-}
 .about .text h1{
     position: relative;
     margin: 0 0 20px;
@@ -105,7 +97,6 @@ body{
     line-height: 1.75;
 }
 .about .img{
-    flex: 1;
     padding: 10px;
     border: solid 1px #f1f1f1;
 }
@@ -117,7 +108,6 @@ body{
 .byTheWay{
     background-image: url("../Data/IMG/019.jpg");
     background-attachment: fixed;
-    /* 問題3 */
     opacity: .9;
     padding: 80px 0;
     text-align: center;
@@ -196,9 +186,6 @@ body{
     padding: 80px 0;
     background-color: #1c1d1f;
 }
-.footer .container{
-    width: 50%;
-}
 .footer .container .item{
     flex: 1;
 }
@@ -256,7 +243,6 @@ h4{
 a.btn{
     display: inline-block;
     padding: 10px 18px;
-    /* 問題2 */
     font-size: 14px;
     border: solid 1px;
     background-color: #DE6F38;
@@ -264,12 +250,6 @@ a.btn{
     color: #ffffff;
     transition: all .3s ease-in-out;
     box-sizing: border-box;
-}
-.m-l-4{
-    margin-left: 4%;
-}
-.m-l-10{
-    margin-left: 10%;
 }
 .bac-c-or{
     background-color: #DE6F38;
@@ -282,34 +262,97 @@ a.btn{
 }
 
 /* 電腦 */
-/* header */
-.header{
-    display: flex;
-    justify-content: space-between;
+@media screen and (min-width:768px) {
+    .wrapper{
+        width: 95%;
+        max-width: 1140px;
+        margin: auto;
+    }
+    /* header */
+    .header{
+        display: flex;
+        justify-content: space-between;
+    }
+    .container-title{
+        flex: 1;
+    }
+    .container-contact{
+        flex: 2;
+    }
+    .header ul {
+        display: flex;
+    }
+    .header li {
+        flex: 1;
+    }
+    /* about */
+    .about .container{
+        display: flex;
+        justify-content: space-between;
+    }
+    .about .text{
+        flex: 1;
+    }
+    .about .img{
+        flex: 1;
+    }
+    /*services */
+    #services .container{
+        display: flex;
+    }
+    /* footer */
+    .footer .container{
+        display: flex;
+        justify-content: flex-start;
+        width: 50%;
+    }
+    /* Decorate */
+    .m-l-4{
+        margin-left: 4%;
+    }
+    .m-l-10{
+        margin-left: 10%;
+    }
 }
-.container-title{
-    flex: 1;
-}
-.container-contact{
-    flex: 2;
-}
-.header ul {
-    display: flex;
-}
-.header li {
-    flex: 1;
-}
-/* about */
-.about .container{
-    display: flex;
-    justify-content: space-between;
-}
-/*services */
-#services .container{
-    display: flex;
-}
-/* footer */
-.footer .container{
-    display: flex;
-    justify-content: flex-start;
+
+/* 手機 */
+@media screen and (max-width:768px){
+    .wrapper{
+        padding: 10%;
+        padding-top: 5%;
+        padding-bottom: 5%;
+    }
+    /* header */
+    .header .title h2{
+        font-size: 28px;
+    }
+    .header .container-contact{
+        margin-top: 10%;
+    }
+    .banner .caption span{
+        font-size: 28px;
+    }
+    /* about */
+    .about .container{
+        margin-bottom: 10%;
+    }
+    .about .container .text{
+        background-color: #ffffff;
+    }
+    .about .container .img{
+        display: none;
+    }
+    /* byTheWay */
+    .byTheWay{
+        padding: 10%;
+        padding-top: 80px;
+        padding-bottom: 80px;
+        line-height: 30px;
+    }
+    /* services */
+    #services .item{
+        margin-bottom: 10%;
+    }
+
+    /* Decorate */
 }
