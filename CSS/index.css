@@ -11,12 +11,13 @@
 body{
     background-color: #ffffff;
 }
-/* header */
-.header{
+.wrapper{
     width: 95%;
     max-width: 1140px;
-    /* 問題1 */
     margin: auto;
+}
+/* header */
+.header{
     padding: 50px 0;
 }
 .header .title {
@@ -57,10 +58,12 @@ body{
     object-fit: cover;
     filter: grayscale(40%);
 }
+.banner .container{
+    position: relative;
+}
 .banner .caption {
     position: absolute;
-    top: 40%;
-    left: 5%;
+    top: 30%;
 }
 .banner .caption span{
     color: #ffffff;
@@ -69,15 +72,10 @@ body{
 }
 .banner .btn {
     position: absolute;
-    top: 60%;
-    left: 5%;
+    bottom: 30%;
 }
 /* about */
 .about{
-    width: 95%;
-    max-width: 1140px;
-    /* 問題1 */
-    margin: auto;
     padding: 24px 0;
 }
 .about .container{
@@ -138,10 +136,6 @@ body{
 }
 /*services */
 #services{
-    width: 95%;
-    max-width: 1140px;
-    /* 問題1 */
-    margin: auto;
     padding: 80px 0;
 }
 #services .center{
@@ -196,11 +190,11 @@ body{
 #services hr{
     margin: 14px 0;
 }
+
+/* footer */
 .footer{
-    width: 95%;
-    max-width: 1140px;
-    margin: auto;
     padding: 80px 0;
+    background-color: #1c1d1f;
 }
 .footer .container{
     width: 50%;
@@ -226,21 +220,20 @@ body{
     font-size: 14px;
     color: #a8a8a8;
     margin-bottom: 10px;
-    padding: 10px 0 15px 40px;
+    padding: 10px 0 15px 5px;
+}
+
+/* floor */
+.floor{
+    width: 100%;
+    background-color: #151618;
 }
 #copyright{
-    width: 95%;
-    /* 問題1 */
-    max-width: 1140px;
-    margin: auto;
     padding: 20px 0;
     color: #a8a8a8;
     font-size: 17.5px;
 }
 /* Decorate */
-.wrapper{
-    width: 100%;
-}
 h1{
     font-size: 42px;
     font-weight: 700;
@@ -275,8 +268,8 @@ a.btn{
 .m-l-4{
     margin-left: 4%;
 }
-.m-l-5{
-    margin-left: 5%;
+.m-l-10{
+    margin-left: 10%;
 }
 .bac-c-or{
     background-color: #DE6F38;
@@ -286,12 +279,6 @@ a.btn{
 }
 .border-b{
     border-bottom: solid 1px #a8a8a8;
-}
-.bac-c-black{
-    background-color: #151618;
-}
-.bac-c-l-black{
-    background-color: #1c1d1f;
 }
 
 /* 電腦 */
