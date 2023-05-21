@@ -1,102 +1,132 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>施佑儒的自我介紹</title>
     <link rel="stylesheet" href="CSS/reset.css">
-    <link rel="stylesheet" href="CSS/index.css">
     <link rel="stylesheet" href="CSS/awsome-popup.css">
+    <link rel="stylesheet" href="CSS/slick-theme.css">
+    <link rel="stylesheet" href="CSS/slick.css">
+    <link rel="stylesheet" href="CSS/index.css">
+
 </head>
+
 <body>
     <!-- header -->
     <div class="wrapper">
-        <div class="header">
+        <div id="header" class="enter_anime_before">
             <div class="container-title">
-                <div class="title">
-                    <a href="#"><img src="Data/IMG/058.png" alt=""></a>
-                    <h2>施佑儒的自我介紹</h2>
-                </div>
+                <h2 class="title">施佑儒的自我介紹</h2>
                 <div class="subtitle">YuRu's Introduction</div>
             </div>
-            <div class="container-contact">
-                <ul>
-                    <li> 
-                        <div>
-                            <a href="#"><img src="" alt=""></a>
+            <div class="container-content pcVer">
+                <div class="flex_container">
+                    <div class="flex_item">
+                        <div class="flex_container">
+                            <div class="flex_item item_img">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="flex_item cellphone">
+                                <p class="font-w-7">電話</p>
+                                <p>0963-797-633</p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="font-w-7">電話</p>
-                            <p>0963-797-633</p>
+                    </div>
+                    <div class="flex_item">
+                        <div class="flex_container">
+                            <div class="flex_item item_img">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="flex_item email">
+                                <p class="font-w-7">電郵</p>
+                                <p>yuru910475@gmail.com</p>
+                            </div>
                         </div>
-                    </li>
-                    <li> 
-                        <div>
-                            <a href="#"><img src="" alt=""></a>
+                    </div>
+                    <div class="flex_item">
+                        <div class="flex_container">
+                            <div class="flex_item item_img">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="flex_item time">
+                                <p class="font-w-7">星期一至五</p>
+                                <p>09:00 - 18:00</p>
+                            </div>
                         </div>
-                        <div>
-                            <p class="font-w-7">電郵</p>
-                            <p>yuru910475@gmail.com</p>
-                        </div>
-                    </li>
-                    <li> 
-                        <div>
-                            <a href="#"><img src="" alt=""></a>
-                        </div>
-                        <div>
-                            <p class="font-w-7">星期一至五</p>
-                            <p>09:00 - 18:00</p>
-                        </div>    
-                    </li>
-                </ul>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-
     <!-- banner -->
-    <div class="banner">
+    <div class="banner enter_anime_before">
         <div class="container">
-            <img src="Data/IMG/026.jpg" alt="電腦桌">
+            <div class="aspect-ratio"><img src="Data/IMG/fv.jpg" alt="fv" class="mainVision"></div>
             <div class="wrapper">
                 <div class="caption">
-                    <span>網頁切版師志願</span>
+                    <span id="ityped"></span>
                 </div>
-                <a class="btn" href="#services">了解更多</a>
             </div>
         </div>
     </div>
 
     <!-- about -->
     <div class="wrapper">
-        <div class="about">
+        <div class="about enter_anime_before">
             <div class="container">
-                <div class="text">
+                <div class="text flex_order1">
+                    <h1>實際完成的業務</h1>
+                    <div class="img aspect-ratio mbVer">
+                        <img src="Data/IMG/cooperate.jpg" alt="cooperate">
+                    </div>
+                    <ul>
+                        <li>與設計師合作，進行日系美妝 landing page 網頁設計</li>
+                        <li>與廣告投手合作，參與各類追蹤碼設定與API串接</li>
+                        <li>負責JS除錯與重構</li>
+                        <li>參與購物車功能開發</li>
+                    </ul>
+                    <a class="btn brandListBtn" href="javascript:;">合作品牌</a>
+                </div>
+                <div class="img aspect-ratio m-l-7 flex_order2 pcVer">
+                    <img src="Data/IMG/cooperate.jpg" alt="cooperate">
+                </div>
+            </div>
+            <div class="container">
+                <div class="text m-l-7 flex_order2">
                     <h1>目前掌握的能力</h1>
-                    <p>HTML5、CSS3、JQuery、RWD響應式設計、Boostrap，基本網頁切版，由於還未有過實際工作的經驗，因此說「掌握」似乎有些過於自信，私自認為網頁切版的學習是無窮無盡的，不過現階段確實是有足夠能力製作入門級的一頁式網頁。</p>
-                    <a class="btn" href="#services">了解更多</a>
+                    <div class="img aspect-ratio mbVer">
+                        <img src="Data/IMG/code.jpg" alt="code">
+                    </div>
+                    <ul>
+                        <li>HTML5、CSS3、JAVASCRIPT 網頁前端設計</li>
+                        <li>AJAX前後端資料傳輸、API串接</li>
+                        <li>TWIG模板引擎</li>
+                        <li>Git 版本控制</li>
+                    </ul>
+                    <a class="btn" href="https://github.com/910475syk" target="_blank">我的Github</a>
                 </div>
-                <div class="img m-l-4">
-                    <img src="Data/IMG/027.jpg" alt="">
+                <div class="img aspect-ratio flex_order1 pcVer">
+                    <img src="Data/IMG/code.jpg" alt="code">
                 </div>
             </div>
             <div class="container">
-                    <div class="img">
-                        <img src="Data/IMG/028.jpg" alt="">
+                <div class="text flex_order1">
+                    <h1>未來前進的方向</h1>
+                    <div class="img aspect-ratio m-l-7 mbVer">
+                        <img src="Data/IMG/php.jpg" alt="php">
                     </div>
-                    <div class="text m-l-4">
-                        <h1>持續學習的方向</h1>
-                        <p>JavaScript，雖然有使用JQuery的經驗，但只是做了些簡易的動畫效果與資料傳輸，目前正在進行Javascript的完整學習，由於只要沒有持續接觸就會漸漸遺忘，因此同步進行著網頁切版的練習，希望能將自己的網頁製作能力更加提升。</p>
-                        <a class="btn" href="#services">了解更多</a>
-                    </div>
-            </div>
-            <div class="container">
-                <div class="text">
-                    <h1>未來前進的目標</h1>
-                    <p>以全端工程師為目標，由於在開始自學網頁設計前有在AI人工智能方面的職訓局學習，因此學習了一些Python的語法，之前有嘗試學習Python Django的使用方法，但由於Javascript還未學習完畢，所以將其當作下一階段的學習目標，以能自行進行全端的實作為目標努力。</p>
-                    <a class="btn" href="#services">了解更多</a>
+                    <ul>
+                        <li>網頁前端設計深造</li>
+                        <li>熟習php後端程式設計</li>
+                        <li>MYSQL資料庫使用</li>
+                        <li>熟習Linux作業系統下的程式開發</li>
+                    </ul>
+                    <a class="btn" href="#floor">與我聯繫</a>
                 </div>
-                <div class="img m-l-4">
-                    <img src="Data/IMG/029.jpg" alt="">
+                <div class="img aspect-ratio m-l-7 flex_order2 pcVer">
+                    <img src="Data/IMG/php.jpg" alt="php">
                 </div>
             </div>
         </div>
@@ -104,68 +134,61 @@
 
     <!-- byTheWay -->
     <div class="byTheWay">
-        <h3>用作品說話</h3>
-        <p>這是我在Github上的帳號網址：<a href="https://github.com/910475syk">點我</a>，裡面有我目前的作品集，未來會持續努力精進自己</p>
+        <h3>大型網站開發經驗</h3>
+        <p>參與品牌官方網站開發：<a href="https://yourkins.tw/" target="_blank">KINS(點我)</a>、<a href="https://jpselection.tw/"
+                target="_blank">DUO麗優(點我)</a></p>
     </div>
 
-    <!-- services -->
+    <!-- personality -->
     <div class="wrapper">
-        <div id="services">
+        <div id="personality" class="enter_anime_before">
             <div class="center">
-            <h3>我的人格特質</h3>
+                <h3>我的人格特質</h3>
             </div>
-            <div class="container">
-                <div class="item bac-c-or"> 
-                    <a href="#"></a>
-                    <h4>我的優點</h4>
-                    <p>憑空轉行自學的毅力與渴望更多知識的學習欲望，無論是還在待業中的現在亦或是開始工作後的日子，都將奮發向上努力繼續精進，如果您期待的是一位能隨著公司一同成長的員工，我將不負您的期望。</p>
-                    <hr>
-                    <ul>
-                        <li>勇於突破現狀的膽識</li>
-                        <li>不會安於現狀持續精進學習的精神</li>
-                        <li>自學解決問題的經驗</li>
-                        <li>面對未知情況的抗壓性</li>
-                        <li>身為外科生的謙遜</li>
-                        <li>順應公司改變的可塑性</li>
-                        <li>對於在資訊領域持續成長的夢想</li>
-                    </ul>
-                    <hr>
-                    <a href="#">獨自解決問題的能力!!</a>
+            <div class="slick">
+                <div class="card">
+                    <div class="flex_container">
+                        <div class="img aspect-ratio"><img src="Data/IMG/positive.jpg" alt="positive"></div>
+                        <div class="text bac-c-lightPink">
+                            <div class="flex_ltem">
+                                <p>積</p>
+                                <p>極</p>
+                                <p>熱</p>
+                                <p>情</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item bac-c-b m-l-4"> 
-                    <a href="#"></a>
-                    <h4>我的經歷</h4>
-                    <p>大學就讀農牧相關科系鍛鍊出了十足的體力，畢業後於餐飲服務業的經歷掌握了待客之道與團隊協作的溝通能力，原有前往日本打工度假的計畫而修習了些許日語能力，在體力、溝通方面有著自信，日語能力在公司有需要時也能馬上努力補上。</p>
-                    <hr>
-                    <ul>
-                        <li>搬運沉重飼料的體力與毅力</li>
-                        <li>面對用餐尖峰時刻的高壓環境的經驗</li>
-                        <li>團隊合作中重要的溝通能力</li>
-                        <li>和善開朗的性格創造愉快的工作氣氛</li>
-                        <li>完成手上工作任務的專注力與責任心</li>
-                        <li>服務業鍛鍊出的禮節與細心</li>
-                        <li>在讀與聽方面有N2證書的日本語能力</li>
-                    </ul>
-                    <hr>
-                    <a href="#">服務業的經驗擅長與人相處!!</a>
+                <div class="card">
+                    <div class="flex_container">
+                        <div class="img aspect-ratio">
+                            <img src="Data/IMG/communicate.jpg" alt="communicate">
+                        </div>
+                        <div class="text bac-c-black">
+                            <div class="flex_ltem">
+                                <p>重</p>
+                                <p>視</p>
+                                <p>溝</p>
+                                <p>通</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="item bac-c-or m-l-4"> 
-                    <a href="#"></a>
-                    <h4>我的興趣</h4>
-                    <p>平日的興趣為閱讀漫畫、小說，觀看動畫、電影，因而十分喜愛日本文化，希望待國際間開放通行後能再次前往日本旅遊。除了靜態的觀賞娛樂作品外，平時也喜歡去戶外踏青，由於舅舅熱愛登山非常，也有隨舅舅遠征諸如雪山、奇萊山等高山的經歷。</p>
-                    <hr>
-                    <ul>
-                        <li>日系漫畫、動畫、遊戲</li>
-                        <li>日本歷史、節慶、名勝相關知識學習</li>
-                        <li>各國翻譯小說</li>
-                        <li>電影觀賞(驚悚、恐怖類除外)</li>
-                        <li>美麗畫作、照片鑑賞</li>
-                        <li>公園散步、登山</li>
-                        <li>跑步、有氧運動</li>
-                    </ul>
-                    <hr>
-                    <a href="#">喜愛日本文化與藝術!!</a>
-                </div>    
+                <div class="card">
+                    <div class="flex_container">
+                        <div class="img aspect-ratio">
+                            <img src="Data/IMG/research.jpg" alt="research">
+                        </div>
+                        <div class="text bac-c-LightBlue">
+                            <div class="flex_ltem">
+                                <p>深</p>
+                                <p>究</p>
+                                <p>精</p>
+                                <p>神</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
@@ -185,13 +208,13 @@
                         <li class="border-b">0963-797-633</li>
                         <li>yuru910475@gmail.com</li>
                     </ul>
-                </div>    
+                </div>
             </div>
         </div>
     </div>
 
     <!-- flooer -->
-    <div class="floor">
+    <div id="floor">
         <div class="wrapper">
             <div id="copyright">
                 &copy; 施佑儒的自我介紹
@@ -199,9 +222,41 @@
         </div>
     </div>
 
+    <!-- popup -->
+    <div class="popupBg">
+        <div class="popup">
+            <div class="brandLsit">
+                <ul class="checkmark">
+                    <li class="checkmark__item"><a href="https://yourkins.tw/" target="_blank"><img
+                                src="Data/IMG/kins.webp" alt="KINS">KINS</a></li>
+                    <li class="checkmark__item"><a href="https://jpselection.tw/" target="_blank"><img
+                                src="Data/IMG/duo.jpg" alt="DUO麗優">DUO麗優</a></li>
+                    <li class="checkmark__item"><a href="https://polypure.tw/" target="_blank"><img
+                                src="Data/IMG/csc.jpg" alt="多力寶">多力寶</a></li>
+                    <li class="checkmark__item"><a href="https://www.zeria.tw/" target="_blank"><img
+                                src="Data/IMG/zeria.jpg" alt="ZERIA">ZERIA</a></li>
+                    <li class="checkmark__item"><a href="https://www.nicosoap.tw/nicosoap_fv2_lp" target="_blank"><img
+                                src="Data/IMG/nico.jpg" alt="愛子皂">愛子皂</a></li>
+                    <li class="checkmark__item"><a href="https://www.ionkesho.tw/softlotion_lp" target="_blank"><img
+                                src="Data/IMG/ion.jpg" alt="ION麗溫">ION麗溫</a></li>
+                    <li class="checkmark__item"><a href="https://www.charle-japan.tw/milkwash_lp" target="_blank"><img
+                                src="Data/IMG/charle.jpg" alt="CHARLE夏蕾">CHARLE夏蕾</a></li>
+                    <li class="checkmark__item"><a href="https://www.fusari.tw/kmz_lp" target="_blank"><img
+                                src="Data/IMG/favicon.jpg" alt="FUSARI馥絲麗">FUSARI馥絲麗</a></li>
+                    <li class="checkmark__item"><a href="https://frais-labo.tw/whitevcserum_lp" target="_blank"><img
+                                src="Data/IMG/fraislabo.jpg" alt="FRAIS LABO芙芮絲">FRAIS芙芮絲</a></li>
+                </ul>
+            </div>
+            <span class="popup_closeBtn">×</span>
+        </div>
+    </div>
+
     <!-- javascript -->
-    <script src="JS/font-awesome5.15.4.min.js"></script>
     <script src="JS/jquery.min.js"></script>
+    <script src="JS/font-awesome5.15.4.min.js"></script>
+    <script src="https://unpkg.com/ityped@1.0.2"></script>
+    <script src="JS/slick.js"></script>
     <script src="JS/index.js"></script>
 </body>
+
 </html>
