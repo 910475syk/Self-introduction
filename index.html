@@ -87,7 +87,7 @@
                         <li>負責JS除錯與重構</li>
                         <li>參與購物車功能開發</li>
                     </ul>
-                    <a class="btn brandListBtn" href="javascript:;">合作品牌</a>
+                    <a class="btn" href="#brand">合作品牌</a>
                 </div>
                 <div class="img aspect-ratio m-l-7 flex_order2 pcVer">
                     <img src="Data/IMG/cooperate.jpg" alt="cooperate">
@@ -100,9 +100,10 @@
                         <img src="Data/IMG/code.jpg" alt="code">
                     </div>
                     <ul>
-                        <li>HTML5、CSS3、JAVASCRIPT 網頁前端設計</li>
-                        <li>AJAX前後端資料傳輸、API串接</li>
-                        <li>TWIG模板引擎</li>
+                        <li>HTML5、CSS3、Javascript 網頁前端設計</li>
+                        <li>Jquery 與前端套件整合</li>
+                        <li>Ajax前後端資料傳輸、網站行銷追蹤碼 API 串接</li>
+                        <li>Twig模板引擎</li>
                         <li>Git 版本控制</li>
                     </ul>
                     <a class="btn" href="https://github.com/910475syk" target="_blank">我的Github</a>
@@ -119,9 +120,9 @@
                     </div>
                     <ul>
                         <li>網頁前端設計深造</li>
-                        <li>熟習php後端程式設計</li>
-                        <li>MYSQL資料庫使用</li>
-                        <li>熟習Linux作業系統下的程式開發</li>
+                        <li>熟習後端程式設計（例如php）</li>
+                        <li>MySQL資料庫系統在後端的整合與應用</li>
+                        <li>熟習Linux網站司服器架設（例如LAMP）</li>
                     </ul>
                     <a class="btn" href="#floor">與我聯繫</a>
                 </div>
@@ -139,99 +140,104 @@
                 target="_blank">DUO麗優(點我)</a></p>
     </div>
 
-    <style>
-        .brand_container{
-            width: 800px;
-            max-width: 95%;
-            margin: auto;
-        }
-        .brand_container .brand_flex{
-            display: flex;
-            flex-wrap: wrap;
-        }
-        .brand_container .brand_flex .card{
-            width: 30%;
-        }
-        .brand_container .brand_flex .card .brand_item{
-            position: relative;
-            width: 100%;
-            padding-top: 100%;
-        }
-        .brand_container .brand_flex .card .brand_item .brand_name{         
-            display: flex;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            transform-origin: center;
-        }
-        .darkBlue_item{
-            background-color: #182e57;
-        }
-        .beige_item{
-            background-color: #fffaf4;
-        }
-        
-    </style>
-    <!-- cooperate Brand
-    <div class="brand_container">
+    <!-- cooperate Brand -->
+    <div id="brand" class="brand_container enter_anime_before">
+        <div class="center">
+            <h3>合作品牌</h3>
+        </div>
         <ul class="brand_flex">
-            <li class="card darkBlue_item"><a href="https://yourkins.tw/" target="_blank"><div class="brand_item">
-                <img src="" alt="">
-                <span class="brand_name"><img
-                    src="Data/IMG/kins.webp" alt="KINS">KINS</span>
-            </div></a></li>
+            <li class="card darkBlue_item"><a href="https://yourkins.tw/" target="_blank">
+                    <div class="brand_bg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="brand_name">
+                        <div class="img"><img src="Data/IMG/kins.webp" alt="KINS"></div>
+                        <div class="text">KINS</div>
+                    </div>
+                </a></li>
 
-            <li class="card beige_item"><a href="https://jpselection.tw/" target="_blank"><div class="brand_item">
-                <img src="" alt="">
-                <span class="brand_name"><img
-                    src="Data/IMG/duo.jpg" alt="DUO麗優">DUO麗優</span>
-            </div></a></li>
+            <li class="card beige_item"><a href="https://jpselection.tw/" target="_blank">
+                    <div class="brand_bg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="brand_name">
+                        <div class="img"><img src="Data/IMG/duo.jpg" alt="DUO麗優"></div>
+                        <div class="text">DUO麗優</div>
+                    </div>
+                </a></li>
 
-            <li class="card darkBlue_item"><a href="https://polypure.tw/" target="_blank"><div class="brand_item">
-                <img src="" alt="">
-                <span class="brand_name"><img
-                    src="Data/IMG/csc.jpg" alt="多力寶">多力寶</span>
-            </div></a></li>
+            <li class="card darkBlue_item"><a href="https://polypure.tw/" target="_blank">
+                    <div class="brand_bg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="brand_name">
+                        <div class="img"><img src="Data/IMG/csc.jpg" alt="多力寶"></div>
+                        <div class="text">多力寶</div>
+                    </div>
+                </a></li>
 
-            <li class="card beige_item"><a href="https://www.zeria.tw/" target="_blank"><div class="brand_item">
-                <img src="" alt="">
-                <span class="brand_name"><img
-                    src="Data/IMG/zeria.jpg" alt="ZERIA">ZERIA</span>
-            </div></a></li>
+            <li class="card beige_item"><a href="https://www.zeria.tw/" target="_blank">
+                    <div class="brand_bg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="brand_name">
+                        <div class="img"><img src="Data/IMG/zeria.jpg" alt="ZERIA"></div>
+                        <div class="text">ZERIA</div>
+                    </div>
+                </a></li>
 
-            <li class="card darkBlue_item"><a href="https://www.nicosoap.tw/nicosoap_fv2_lp" target="_blank"><div class="brand_item">
-                <img src="" alt="">
-                <span class="brand_name"><img
-                    src="Data/IMG/nico.jpg" alt="愛子皂">愛子皂</span>
-            </div></a></li>
+            <li class="card darkBlue_item"><a href="https://www.nicosoap.tw/nicosoap_fv2_lp" target="_blank">
+                    <div class="brand_bg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="brand_name">
+                        <div class="img"><img src="Data/IMG/nico.jpg" alt="愛子皂"></div>
+                        <div class="text">愛子皂</div>
+                    </div>
+                </a></li>
 
-            <li class="card beige_item"><a href="https://www.ionkesho.tw/softlotion_lp" target="_blank"><div class="brand_item">
-                <img src="" alt="">
-                <span class="brand_name"><img
-                    src="Data/IMG/ion.jpg" alt="ION麗溫">ION麗溫</span>
-            </div></a></li>
+            <li class="card beige_item"><a href="https://www.ionkesho.tw/softlotion_lp" target="_blank">
+                    <div class="brand_bg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="brand_name">
+                        <div class="img"><img src="Data/IMG/ion.jpg" alt="ION麗溫"></div>
+                        <div class="text">ION麗溫</div>
+                    </div>
+                </a></li>
 
-            <li class="card darkBlue_item"><a href="https://www.charle-japan.tw/milkwash_lp" target="_blank"><div class="brand_item">
-                <img src="" alt="">
-                <span class="brand_name"><img
-                    src="Data/IMG/charle.jpg" alt="CHARLE夏蕾">CHARLE夏蕾</span>
-            </div></a></li>
+            <li class="card darkBlue_item"><a href="https://www.charle-japan.tw/milkwash_lp" target="_blank">
+                    <div class="brand_bg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="brand_name">
+                        <div class="img"><img src="Data/IMG/charle.jpg" alt="CHARLE夏蕾"></div>
+                        <div class="text">CHARLE</div>
+                    </div>
+                </a></li>
 
-            <li class="card beige_item"><a href="https://www.fusari.tw/kmz_lp" target="_blank"><div class="brand_item">
-                <img src="" alt="">
-                <span class="brand_name"><img
-                    src="Data/IMG/favicon.jpg" alt="FUSARI馥絲麗">FUSARI馥絲麗</span>
-            </div></a></li>
+            <li class="card beige_item"><a href="https://frais-labo.tw/whitevcserum_lp" target="_blank">
+                    <div class="brand_bg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="brand_name">
+                        <div class="img"><img src="Data/IMG/fraislabo.jpg" alt="FRAIS LABO芙芮絲"></div>
+                        <div class="text">FRAIS</div>
+                    </div>
+                </a></li>
 
-            <li class="card darkBlue_item"><a href="https://frais-labo.tw/whitevcserum_lp" target="_blank"><div class="brand_item">
-                <img src="" alt="">
-                <span class="brand_name"><img
-                    src="Data/IMG/fraislabo.jpg" alt="FRAIS LABO芙芮絲">FRAIS芙芮絲</span>
-            </div></a></li>
+            <li class="card darkBlue_item"><a href="https://www.fusari.tw/kmz_lp" target="_blank">
+                    <div class="brand_bg">
+                        <img src="" alt="">
+                    </div>
+                    <div class="brand_name">
+                        <div class="img"><img src="Data/IMG/favicon.jpg" alt="FUSARI馥絲麗"></div>
+                        <div class="text">FUSARI</div>
+                    </div>
+                </a></li>
+
         </ul>
     </div>
- -->
     <!-- personality -->
     <div class="wrapper">
         <div id="personality" class="enter_anime_before">
@@ -240,47 +246,37 @@
             </div>
             <div class="slick">
                 <div class="card">
-                    <div class="flex_container">
-                        <div class="img aspect-ratio"><img src="Data/IMG/positive.jpg" alt="positive"></div>
-                        <div class="text bac-c-lightPink">
-                            <div class="flex_ltem">
-                                <p>積</p>
-                                <p>極</p>
-                                <p>熱</p>
-                                <p>情</p>
-                            </div>
+                    <div class="icon">
+                        <div class="frame">
+                            <img src="Data/IMG/sun.png" alt="sun">
                         </div>
                     </div>
+                    <div class="img aspect-ratio">
+                        <img src="Data/IMG/positive.jpg" alt="positive">
+                    </div>
+                    <span class="c-yellow">積 極 熱 情</span>
                 </div>
                 <div class="card">
-                    <div class="flex_container">
-                        <div class="img aspect-ratio">
-                            <img src="Data/IMG/communicate.jpg" alt="communicate">
-                        </div>
-                        <div class="text bac-c-black">
-                            <div class="flex_ltem">
-                                <p>重</p>
-                                <p>視</p>
-                                <p>溝</p>
-                                <p>通</p>
-                            </div>
+                    <div class="icon">
+                        <div class="frame widthVer">
+                            <img src="Data/IMG/shakeHand.png" alt="shakeHand">
                         </div>
                     </div>
+                    <div class="img aspect-ratio">
+                        <img src="Data/IMG/communicate.jpg" alt="communicate">
+                    </div>
+                    <span class="c-glay">重 視 溝 通</span>
                 </div>
                 <div class="card">
-                    <div class="flex_container">
-                        <div class="img aspect-ratio">
-                            <img src="Data/IMG/research.jpg" alt="research">
-                        </div>
-                        <div class="text bac-c-LightBlue">
-                            <div class="flex_ltem">
-                                <p>深</p>
-                                <p>究</p>
-                                <p>精</p>
-                                <p>神</p>
-                            </div>
+                    <div class="icon">
+                        <div class="frame heightVer">
+                            <img src="Data/IMG/magnifier.png" alt="magnifier">
                         </div>
                     </div>
+                    <div class="img aspect-ratio">
+                        <img src="Data/IMG/research.jpg" alt="research">
+                    </div>
+                    <span class="c-lightBlue">深 究 精 神</span>
                 </div>
             </div>
         </div>
@@ -316,7 +312,7 @@
     </div>
 
     <!-- popup -->
-    <div class="popupBg">
+    <!-- <div class="popupBg">
         <div class="popup">
             <div class="brandLsit">
                 <ul class="checkmark">
@@ -342,7 +338,7 @@
             </div>
             <span class="popup_closeBtn">×</span>
         </div>
-    </div>
+    </div> -->
 
     <!-- javascript -->
     <script src="JS/jquery.min.js"></script>

@@ -5,10 +5,14 @@ $(document).ready(function () {
     $(window).scroll(function () {
         let scrollTop = $(document).scrollTop();
         let about_height = $('.about').offset().top - $('.about').height() / 2;
+        let brand_height = $('#brand').offset().top - $('#brand').height() / 2;
         let services_height = $('#personality').offset().top - $('#personality').height() * 2;
 
         if (scrollTop > about_height) {
             $('.about').addClass('enter_anime_after');
+        }
+        if (scrollTop > brand_height) {
+            $('#brand').addClass('enter_anime_after');
         }
         if (scrollTop > services_height) {
             $('#personality').addClass('enter_anime_after');
@@ -35,6 +39,17 @@ $(document).ready(function () {
         $(this).toggleClass('penetrate');
     })
 
+    // brand
+    $('.brand_flex .card').on('mouseenter', function () {
+        $(this).find('.brand_bg').fadeIn();
+        $(this).find('.text').addClass('hoverTextColor')
+    });
+
+    $('.brand_flex .card').on('mouseleave', function () {
+        $(this).find('.brand_bg').fadeOut();
+        $(this).find('.text').removeClass('hoverTextColor')
+    });
+
     // slick
     $('.slick').slick({
         dots: false,
@@ -51,21 +66,21 @@ $(document).ready(function () {
     });
 
     // popup
-    $('.brandListBtn').click(function () {
-        $('.popupBg').fadeIn();
-    });
+    // $('.brandListBtn').click(function () {
+    //     $('.popupBg').fadeIn();
+    // });
 
-    $('.popup').on('click', function (event) {
-        event.stopPropagation();
-    })
+    // $('.popup').on('click', function (event) {
+    //     event.stopPropagation();
+    // })
 
-    $('.popup .popup_closeBtn').click(function () {
-        $('.popupBg').fadeOut();
-    })
+    // $('.popup .popup_closeBtn').click(function () {
+    //     $('.popupBg').fadeOut();
+    // })
 
-    $('.popupBg').on('click', function () {
-        $('.popupBg').fadeOut();
-    })
+    // $('.popupBg').on('click', function () {
+    //     $('.popupBg').fadeOut();
+    // })
 
 
     //

@@ -49,6 +49,18 @@ a.btn {
     box-sizing: border-box;
 }
 
+.c-yellow {
+    color: #ffd812;
+}
+
+.c-glay {
+    color: #58747a;
+}
+
+.c-lightBlue {
+    color: #eaffff;
+}
+
 .bac-c-or {
     background-color: #DE6F38;
 }
@@ -320,6 +332,126 @@ body {
     font-weight: 700;
 }
 
+/* cooperate Brand */
+
+.brand_container {
+    width: 800px;
+    max-width: 95%;
+    margin: auto;
+    padding: 80px 0 0;
+}
+
+#brand .center {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+#brand .center h3 {
+    display: inline-block;
+    position: relative;
+    margin: 0 0 20px;
+    padding: 0 0 15px;
+}
+
+#brand h3::after {
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -15%;
+    bottom: 0;
+    content: "";
+    background-color: #de6f38;
+    width: 30%;
+    height: 5px;
+    border-radius: 3px;
+}
+
+.brand_container .brand_flex {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.brand_container .brand_flex .card {
+    position: relative;
+    width: 33.3%;
+    padding-top: 33.3%;
+    border: none;
+    transition: 0.8s;
+}
+
+.brand_container .brand_flex .card:hover {
+    background-color: #000000;
+}
+
+.brand_container .brand_flex .card .brand_bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: none;
+    background-color: #000000;
+    opacity: .5;
+}
+
+.brand_container .brand_flex .card .brand_name {
+    display: flex;
+    width: 60%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transform-origin: center;
+}
+
+.brand_container .brand_flex .card .brand_name .img {
+    width: 20%;
+    padding-top: 20%;
+    position: relative;
+    border-radius: 25%;
+    overflow: hidden;
+}
+
+.brand_container .brand_flex .card .brand_name .img img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.brand_container .brand_flex .card .brand_name .text {
+    display: flex;
+    align-items: center;
+    margin: auto;
+    font-size: 1.5rem;
+    transition: .4s;
+}
+
+.darkBlue_item {
+    background-color: #182e57;
+}
+
+.beige_item {
+    background-color: #fffaf4;
+}
+
+.brand_container .brand_flex .card.darkBlue_item .text {
+    color: #fffaf4
+}
+
+.brand_container .brand_flex .card.beige_item .text {
+    color: #182e57;
+}
+
+.brand_container .brand_flex .card .text.hoverTextColor {
+    color: #fffaf4;
+    font-size: 1.8rem;
+    transition: .4s;
+}
+
 /*personality */
 #personality {
     padding: 80px 0;
@@ -368,6 +500,7 @@ body {
 }
 
 .card {
+    position: relative;
     width: 640px;
     max-width: 100%;
     box-sizing: border-box;
@@ -377,21 +510,9 @@ body {
     box-shadow: 5px 5px 6px -5px rgb(0 0 0 / 40%);
 }
 
-.card .flex_container {
-    display: flex;
-}
-
-.card .flex_container .img {
-    flex: 4;
-}
-
-.card .flex_container .text {
-    flex: 1;
-}
-
 .card .aspect-ratio {
     width: 100%;
-    padding-top: 50%;
+    padding-top: 70%;
     position: relative;
 }
 
@@ -402,24 +523,56 @@ body {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    filter: blur(1px);
 }
 
-.card .text .flex_ltem {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+.card .icon {
+    width: 30%;
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transform-origin: center;
+    z-index: 2;
+}
+
+.card .icon .frame {
+    width: 100%;
+    padding-top: 100%;
+    position: relative;
+    border-radius: 25%;
+    overflow: hidden;
+}
+
+.card .icon .frame.widthVer {
+    width: 120%;
+}
+
+.card .icon .frame.heightVer {
+    padding-top: 107%;
+}
+
+.card .icon .frame img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
     height: 100%;
-    font-size: 2.1em;
+    object-fit: cover;
+}
+
+.card span {
+    display: block;
+    width: 600px;
+    max-width: 85%;
+    position: absolute;
+    bottom: 17%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    transform-origin: center;
+    font-size: 5.5rem;
     font-weight: bold;
-}
-
-.card .text.bac-c-black p {
-    color: #cfd5d5;
-}
-
-.card .text.bac-c-LightBlue p {
-    color: #ffffff;
+    text-align: center;
 }
 
 /* footer */
@@ -562,6 +715,7 @@ body {
         display: block;
         text-align: center;
     }
+
     #header .pcVer {
         display: none;
     }
@@ -633,6 +787,12 @@ body {
         line-height: 30px;
     }
 
+    /* cooperate Brand */
+    .brand_container .brand_flex .card {
+        width: 85%;
+        padding-top: 70%;
+    }
+
     /* personality */
     #personality .item {
         margin-bottom: 10%;
@@ -640,6 +800,10 @@ body {
 
     #personality .center {
         margin-bottom: 0;
+    }
+
+    .card span {
+        font-size: 2rem;
     }
 
     /* footer */
