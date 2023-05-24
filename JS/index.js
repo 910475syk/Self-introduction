@@ -42,11 +42,13 @@ $(document).ready(function () {
     // brand
     $('.brand_flex .card').on('mouseenter', function () {
         $(this).find('.brand_bg').fadeIn();
+        $(this).find('.brand_name').addClass('hover')
         $(this).find('.text').addClass('hoverTextColor')
     });
 
     $('.brand_flex .card').on('mouseleave', function () {
         $(this).find('.brand_bg').fadeOut();
+        $(this).find('.brand_name').removeClass('hover')
         $(this).find('.text').removeClass('hoverTextColor')
     });
 
